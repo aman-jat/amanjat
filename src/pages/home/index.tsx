@@ -1,11 +1,10 @@
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import HeaderNav from 'components/headerNav'
 
 const Home = () => {
   return (
     <Box>
       <HeaderNav />
-      <Typography>Hii</Typography>
     </Box>
   )
 }
