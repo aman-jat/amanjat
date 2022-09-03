@@ -1,8 +1,8 @@
-import './App.css';
-import Root from './navigation/Root';
+import './App.css'
+import Root from './navigation/Root'
 
 function App() {
-  return <Root />;
+  return <Root />
 }
 
-export default App;
+export default App

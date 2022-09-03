@@ -1,14 +1,15 @@
-import React from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { Home } from '../pages';
+import { Navigate, Route, Routes, BrowserRouter as Router } from 'react-router-dom'
+import { Home } from '../pages'
 
 const Root = () => {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='*' element={<Navigate to='/site/new' />} />
-    </Routes>
-  );
-};
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<Navigate to='/site/new' />} />
+      </Routes>
+    </Router>
+  )
+}
 
-export default Root;
+export default Root
