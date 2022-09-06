@@ -1,4 +1,3 @@
-import { green } from '@mui/material/colors'
 import { createTheme } from '@mui/material/styles'
 
 declare module '@mui/material/styles' {
@@ -27,26 +26,36 @@ export const appTheme = createTheme({
     primary: {
       main: '#2D2E32',
     },
-    secondary: green,
+    secondary: {
+      light: '#71f4a8',
+      main: '#6EF3A5',
+      dark: '#6EF7A5',
+    },
   },
   typography: {
     h1: {
-      color: '#262626',
+      fontSize: '25px',
+      color: '#ffffff',
     },
     h2: {
-      color: '#262626',
+      fontSize: '23px',
+      color: '#f2f2f2',
     },
     h3: {
-      color: '#262626',
+      fontSize: '21px',
+      color: '#e6e6e6',
     },
     h4: {
-      color: '#262626',
+      fontSize: '19px',
+      color: '#d9d9d9',
     },
     h5: {
-      color: '#f2f2f3',
+      fontSize: '17px',
+      color: '#cccccc',
     },
     h6: {
-      color: '#262626',
+      fontSize: '15px',
+      color: '#bfbfbf',
     },
     subtitle1: {
       color: '#99999b',
@@ -54,8 +63,10 @@ export const appTheme = createTheme({
       fontWeight: '500',
     },
     subtitle2: {
+      fontSize: '12px',
       color: '#262626',
     },
+
     fontFamily: ['DM Sans'].join(','),
     allVariants: {
       color: '#f2f2f3',

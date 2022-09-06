@@ -1,4 +1,5 @@
 import { Stack, useTheme } from '@mui/material'
+import HeaderNav from 'components/headerNav'
 import { Navigate, Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 import { Home } from '../pages'
 
@@ -8,6 +9,7 @@ const Root = () => {
     <Stack sx={{ backgroundColor: theme.palette.primary.main }}>
       <Stack sx={{ margin: { lg: '0 10%', md: '0 5%' } }}>
         <Router>
+          <HeaderNav />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='*' element={<Navigate to='/' />} />
