@@ -51,10 +51,10 @@ const HeaderNav = () => {
         justifyContent={{ sm: 'space-between', md: 'flex-start' }}
       >
         <Stack flexDirection='row'>
-          <Typography variant='h5' mr={1} fontWeight='bold'>
+          <Typography variant='h1' mr={1} fontWeight='bold'>
             {'Aman'}
           </Typography>
-          <Typography variant='h5' mr={{ lg: '24px', md: '16px', sm: 1 }}>
+          <Typography variant='h1' mr={{ lg: '24px', md: '16px', sm: 1 }}>
             Jat
           </Typography>
         </Stack>

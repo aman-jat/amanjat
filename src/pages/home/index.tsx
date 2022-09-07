@@ -1,10 +1,10 @@
 import { Box } from '@mui/material'
-import HeaderNav from 'components/headerNav'
+import Section1 from './Section1'
 
 const Home = () => {
   return (
     <Box>
-      <HeaderNav />
+      <Section1 />
     </Box>
   )
 }
