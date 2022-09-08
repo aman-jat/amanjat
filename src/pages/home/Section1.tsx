@@ -9,7 +9,7 @@ const Section1 = () => {
         <Stack mx={16} alignItems='flex-start' justifyContent='center'>
           <Box p={1} borderRadius={1} sx={{ backgroundColor: theme.palette.secondary.main }}>
             <Typography variant='h6' fontSize={14} color={theme.palette.primary.main}>
-              Full-Stack Software Enginner
+              Full-Stack Software Engineer
             </Typography>
           </Box>
           <Stack my={4}>
