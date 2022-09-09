@@ -5,17 +5,25 @@ const Section1 = () => {
   const theme = useTheme()
   return (
     <Box>
-      <Stack flexDirection='row'>
-        <Stack mx={16} alignItems='flex-start' justifyContent='center'>
+      <Stack
+        direction={{ xxs: 'column-reverse', md: 'row' }}
+        sx={{ alignItems: { xxs: 'center', md: 'flex-start' } }}
+      >
+        <Stack
+          mx={{ lg: 16 }}
+          mt={{ xxs: 4, md: 0 }}
+          alignItems={{ xxs: 'center', md: 'flex-start' }}
+          justifyContent='center'
+        >
           <Box p={1} borderRadius={1} sx={{ backgroundColor: theme.palette.secondary.main }}>
             <Typography variant='h6' fontSize={14} color={theme.palette.primary.main}>
               Full-Stack Software Engineer
             </Typography>
           </Box>
-          <Stack my={4}>
-            <Typography fontSize={60}>Talk is cheap.</Typography>
-            <Typography fontSize={60}>Show me the code</Typography>
-          </Stack>
+
+          <Typography fontSize={60}>Talk is cheap.</Typography>
+          <Typography fontSize={60}>Show me the code</Typography>
+
           <Typography variant='h6'>
             I design and code beautifully simple things, and I love what I do
           </Typography>
@@ -31,7 +39,7 @@ const Section1 = () => {
           </Box>
         </Stack>
 
-        <Stack
+        <Box
           sx={{
             backgroundColor: theme.palette.primary.dark,
             height: '70vh',
@@ -41,7 +49,7 @@ const Section1 = () => {
           }}
         />
       </Stack>
-      <Stack flexDirection='row'>
+      <Stack justifyContent='center' direction='row'>
         <Stack mr={4} flexDirection='row' alignItems='baseline'>
           <Typography fontSize={50} mr={1}>
             2
