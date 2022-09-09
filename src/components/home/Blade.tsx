@@ -13,23 +13,32 @@ const Blade = (props: Props) => {
   const theme = useTheme()
   return (
     <Stack
-      direction='row'
-      alignItems='center'
-      justifyContent='space-between'
       sx={{
+        direction: 'row',
+        width: { md: 420, lg: 480 },
+        justifyContent: 'space-between',
         p: '2rem',
         mt: 2,
         position: 'relative',
         backgroundColor: theme.palette.primary.light,
         borderRadius: 2,
+        '&:hover h1': {
+          color: theme.palette.secondary.main,
+        },
+        '&:hover': {
+          backgroundColor: '#3e3e3e',
+          transform: 'scaleY(1.1)',
+        },
       }}
-      width={{ md: 420, lg: 480 }}
     >
       <Box>
-        <Typography fontSize={28}>{props.title}</Typography>
-        <Typography>{props.text}</Typography>
+        <Typography variant='h1'>{props.title}</Typography>
+        <Typography variant='h6'>{props.text}</Typography>
         <Link to='' style={{ textDecoration: 'none' }}>
-          <Typography fontSize={12} sx={{ textDecoration: 'underline', marginTop: '1rem' }}>
+          <Typography
+            variant='h6'
+            sx={{ textDecoration: 'underline', marginTop: '1rem', color: '#ffffff' }}
+          >
             {props.link}
           </Typography>
         </Link>

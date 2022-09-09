@@ -7,7 +7,7 @@ const Root = () => {
   const theme = useTheme()
   return (
     <Stack sx={{ backgroundColor: theme.palette.primary.main }}>
-      <Stack sx={{ margin: { lg: '0 10%', md: '0 5%' } }}>
+      <Stack sx={{ margin: { xs: '0 10%', lg: '0 10%', md: '0 5%' } }}>
         <Router>
           <HeaderNav />
           <Routes>
