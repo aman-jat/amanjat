@@ -44,7 +44,7 @@ const Section2 = () => {
             fontSize={50}
             sx={{ lineHeight: 1 }}
           >
-            Hello! I'm Jasmeet Kaur
+            Hello! I'm Aman Jat
           </Typography>
           <Typography textAlign={{ xxs: 'center', md: 'left' }} my='2rem' fontSize={20}>
             Every great design begin with an even better story
