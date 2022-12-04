@@ -25,6 +25,7 @@ export const appTheme = createTheme({
   palette: {
     primary: {
       main: '#2D2E32',
+      light: '#343434', // '#3E3E3E', //'#343434',
     },
     secondary: {
       light: '#71f4a8',
